@@ -1,0 +1,21 @@
+<!-- Navigation menu  -->
+
+<template name="navBar">
+    <div class="topnav">
+        <a class="active show-packs" href="{{ pathFor 'home' }}"> Wolfpack App
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="pagesLinks">
+            <a class="show-packs" href="{{ pathFor 'home' }}"> Packs
+            </a>
+            <a class="add-packs" href="{{ pathFor 'pack' }}"> Add Pack </a>
+
+            <a class="show-packs" href="{{ pathFor 'wolves' }}"> Wolves
+            </a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" id="nav-bar">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</template>

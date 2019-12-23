@@ -1,0 +1,27 @@
+<body>
+</body>
+
+<template name="home">
+  <div class="container">
+    <header>
+      {{> navBar}}
+      <h2> Packs </h2>
+    </header>
+    <ul>
+      {{#each packs}}
+      <li>
+        <button class="addWolf">&plus;</button>
+        <i class="fa fa-angle-right hideDetails toggleDetails" id="{{id}}"> {{name}}</i>
+        <ol>
+          {{#each wolves}}
+          <li>
+            <button class="deleteWolfFromPack" id="{{id}}">&times;</button>
+            {{name}}
+          </li>
+          {{/each}}
+        </ol>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

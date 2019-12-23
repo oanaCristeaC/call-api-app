@@ -1,0 +1,21 @@
+<!-- Template display the wolves and their details -->
+<template name="wolves">
+    <div class="container">
+        <header>
+            {{> navBar}}
+            <h2>Wolves</h2>
+        </header>
+        <ul>
+            {{#each wolves}}
+            <li>
+                <i class="fa fa-angle-{{toggleShowWolvesDetails}} display-wolves-details"> {{name}}</i>
+                {{#if showWolvesDetails}}
+                <div>
+                    dob:{{birthday}} sex:{{gender}}
+                </div>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</template>

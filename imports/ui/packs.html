@@ -1,0 +1,26 @@
+<!-- Create a new pack template -->
+<template name="pack">
+    <div class="container">
+        <header>
+            {{> navBar}}
+            <h2> Add a pack </h2>
+        </header>
+        <form class="packData">
+            <div class="form-group">
+                <label for="pack-name">New Pack Name</label>
+                <input type="text" class="form-control" id="pack-name" name="packName" placeholder="Pack Name">
+            </div>
+            <div class="form-group">
+                <label for="pack-location-latidude">Latitude</label>
+                <input type="text" class="form-control" id="pack-location-latidude" name="packLocationLatidude"
+                    placeholder="Location Latidude">
+            </div>
+            <div class="form-group">
+                <label for="pack-location-longitude">Latitude</label>
+                <input type="text" class="form-control" id="pack-location-longitude" name="packLocationLongitude"
+                    placeholder="Location Longitude">
+            </div>
+            <button type="submit" class="btn btn-default submit-add-pack">Submit</button>
+        </form>
+    </div>
+</template>
